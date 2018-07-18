@@ -1,0 +1,8 @@
+vision: 1.02
+spring:
+  application:
+    name: demo1
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/

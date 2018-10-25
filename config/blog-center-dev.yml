@@ -1,0 +1,33 @@
+spring:
+  jackson:
+    time-zone: GMT+8
+  data:
+    mongodb:
+      uri: mongodb://192.168.133.54:27017/pedrodb
+  application:
+    name: blog-center
+  messages:
+    basename: i18n/messages
+management:
+  security:
+    enabled: false
+pedrourl: http://localhost:8082/
+info:
+  version: "@project.version@"
+
+eureka:
+  instance:
+    preferIpAddress: true
+    instance-id: ${spring.cloud.client.ipAddress}:${spring.application.name}:${server.port}
+  client:
+    serviceUrl:
+        defaultZone: http://localhost:8761/eureka/
+#      defaultZone: http://192.168.13.171:8761/eureka/
+
+server:
+  port: 8763
+  compression:
+    enabled: true
+    mime-types: application/json,application/xml,text/html,text/xml,text/plain
+
+ pedrourl: http://localhost:8082/

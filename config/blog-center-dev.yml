@@ -3,7 +3,7 @@ spring:
     time-zone: GMT+8
   data:
     mongodb:
-      uri: mongodb://192.168.133.54:27017/springbootdb
+      uri: mongodb://192.168.133.54:27017/pedrodb
   application:
     name: blog-center
   messages:
